@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="public/bootstrap/dist/css/bootstrap.min.css">
+    <script src="public/jquery/dist/jquery.min.js"></script>
+    <script src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="public/fontSize.js"></script>
+    <script src="./public/r.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0.28rem;
+        }
+
+        .bar {
+            position: relative;
+            display: block;
+            width: 0.5rem;
+            height: 0.05rem;
+            margin: 0.1rem auto;
+            background-color: #000;
+            border-radius: 0.1rem;
+            transition: .3s;
+        }
+
+        .navHeader {
+            height: 1.2rem;
+            line-height: 1.2rem;
+            background-color: #5bc0de;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.4rem;
+
+        }
+
+        .mobileHeader {
+            position: relative;
+        }
+
+        span {
+            font-size: 0.28rem;
+        }
+
+        .navLeft {
+            display: flex;
+            justify-content: space-between;
+            width: 2.2rem;
+        }
+
+        .navLeft > div {
+            line-height: 1.2rem;
+            margin-top: 0.4rem;
+        }
+
+        .navLeft > span {
+            display: block;
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-top: 0.4rem;
+            border: 1px solid #646464;
+            border-radius: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 0.5rem;
+        }
+
+        .navLeft > span > img {
+            width: 0.3rem;
+        }
+
+        .logo {
+            display: block;
+            width: 2rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .couser {
+
+        }
+
+        .deg {
+            transform: rotate(45deg) translateY(0.2rem)
+        }
+
+        .deg1 {
+            transform: rotate(-45deg) translateY(-0.2rem)
+        }
+
+        .ulNav {
+            list-style: none;
+            position: absolute;
+            top: 1.2rem;
+            background-color: #0f0f0f;
+            width: 100%;
+            transform: translateX(-100%);
+            opacity: 0;
+            padding-top: 0.2rem;
+        }
+
+        .ulNav > li {
+            line-height: 0.5rem;
+            width: 100%;
+            /*text-align: center;*/
+            padding-left: 0.5rem;
+        }
+
+        .ulNav > li > a {
+            display: block;
+
+            color: #fff;
+        }
+
+        @keyframes ballmove {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .dianji {
+            animation: ballmove 1s;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+        }
+
+        .secondLevel {
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="mobileHeader">
+    <div class="navHeader">
+        <a href="javascript:;" class="logo"><img src="./images/logo.png" alt=""></a>
+        <div class="navLeft">
+            <span>En</span>
+            <span><img src="images/icon_research.png" alt=""></span>
+            <div class="couser">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <ul class="ulNav">
+        <li><a href="javascript:;">首页</a></li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-2">产品中心</a>
+            <ul class="collapse secondLevel" id="content-2">
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-4">有机颜料</a>
+                    <ul class="collapse secondLevel" id="content-4">
+                        <li><a href="./about.html?about=0">油墨用有机颜料</a></li>
+                        <li><a href="./about.html?about=1">涂料用有机颜料</a></li>
+                        <li><a href="./about.html?about=2">塑胶用有机颜料</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-5">荧光颜料</a>
+                    <ul class="collapse secondLevel" id="content-5">
+                        <li><a href="./about.html?about=0">水性荧光颜料</a></li>
+                        <li><a href="./about.html?about=1">塑胶荧光颜料</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-5">水性色浆</a>
+                    <ul class="collapse secondLevel" id="content-6">
+                        <li><a href="./about.html?about=0">8系列水性色浆</a></li>
+                        <li><a href="./about.html?about=1">B系列水性色浆</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-3">关于丽王</a>
+            <ul class="collapse secondLevel" id="content-3">
+                <li><a href="./about.html?about=0">企业简介</a></li>
+                <li><a href="./about.html?about=1">企业荣誉</a></li>
+                <li><a href="./about.html?about=2">绿色丽王</a></li>
+                <li><a href="./about.html?about=3">视频中心</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;">丽王实例</a></li>
+        <li><a href="javascript:;">企业动态</a></li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-1">联系我们</a>
+            <ul class="collapse secondLevel" id="content-1">
+                <li><a href="./about.html?about=0">联系我们</a></li>
+                <li><a href="./about.html?about=1">在线留言</a></li>
+                <li><a href="./about.html?about=2">人才招聘</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    var a = false
+    $('.couser').click(function () {
+        a = !a;
+        if (a) {
+            $('.couser>.bar:nth-child(2)').css({opacity: 0});
+            $('.couser>.bar:nth-child(1)').addClass('deg');
+            $('.couser>.bar:nth-child(3)').addClass('deg1');
+            $('.ulNav').addClass('dianji')
+        } else {
+            $('.couser>.bar:nth-child(2)').css({opacity: 1});
+            $('.couser>.bar:nth-child(1)').removeClass('deg');
+            $('.couser>.bar:nth-child(3)').removeClass('deg1');
+            $('.ulNav').removeClass('dianji')
+        }
+
+    })
+    var nodemailer = require('nodemailer');
+    var transporter = nodemailer.createTransport({
+        service: 'qq',
+        auth: {
+            user: '819042151@qq.com',
+            pass: 'saimmlxbvvihbeha' //授权码,通过QQ获取
+
+        }
+    });
+    var mailOptions = {
+        from: '819042151@qq.com', // 发送者
+        to: '18860322551@163.com', // 接受者,可以同时发送多个,以逗号隔开
+        subject: 'nodemailer2.5.0邮件发送', // 标题
+        //text: 'Hello world', // 文本
+        html: `<h2>nodemailer基本使用:</h2><h3>
+    <a href="http://blog.csdn.net/zzwwjjdj1/article/details/51878392">
+    http://blog.csdn.net/zzwwjjdj1/article/details/51878392</a></h3>`
+    };
+
+    transporter.sendMail(mailOptions, function (err, info) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+
+        console.log('发送成功');
+    });
+</script>
+</body>
+</html>

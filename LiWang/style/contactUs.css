@@ -1,0 +1,237 @@
+.about-container{
+    /*height: 1000px;*/
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top:200px;
+    margin-bottom: 2rem;
+}
+.activeA{
+    color: #224592 !important;
+}
+.about-container .about-container-left{
+    background-color: #F8F8F8;
+    height: 100%;
+}
+.about-container .about-container-left .tittle{
+    color:#224592;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 20px;
+}
+.about-container .about-container-left .tittle h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about-container .about-container-left ul{
+    padding: 20px;
+}
+.about-container .about-container-left ul li{
+    border-left: 2px solid #224592;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    height: 15px;
+    line-height: 15px;
+    color: #666666;
+}
+.about-container .about-container-left ul li a{
+    color: #666;
+}
+.about-container .about-container-left .contact{
+    background-color: #EAEAEA;
+    padding: 20px;
+    margin-top: 405px;
+    color: #224592;
+    line-height: 40px;
+}
+.about-container .about-container-left .contact p:nth-child(2){
+    line-height: 30px
+}
+.about-container-right img{
+    width: 100%;
+}
+.about-container-right > .tittle{
+    height: 60px;
+    border-bottom: 1px solid #224592;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about-container-right > .tittle-1{
+    height: 60px;
+    border-bottom: 2px solid rgba(242,242,242,1);
+    display: flex;
+    font-size: 20px;
+    color: #224592;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-bottom: 40px;*/
+    letter-spacing: 2px;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.about-container-right > .tittle>p{
+    height: 60px;
+    line-height: 60px;
+    margin-top: -12px;
+}
+.about-container-right > .tittle>p.left{
+    font-size: 30px;
+    color: #224592;
+}
+.about-container-right > .tittle>p.right{
+    color: #333333;
+}
+.about-container-right .container{
+    width: 100%;
+    color: #666666
+}
+.about-container-right .container header{
+    border-left: 2px solid #224592;
+    margin-top: 30px;
+    padding-left: 20px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.about-container-right .container p{
+    width: 100%;
+    text-indent:25px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.connection{
+    display: inline-block;
+    width: 150px;
+    padding: 0 10%;
+    height: 35px;
+    background-color: #224592;
+    color: #fff !important;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+.con{
+    display: none;
+}
+/*联系我们*/
+.contactUsCon{
+    margin-top: 35px;
+}
+.contactUsCon ul li{
+    line-height: 35px;
+    position: relative;
+    color: #646464;
+}
+.contactUsCon ul li span:nth-last-child(1){
+    padding-left: 20px;
+}
+.contactUsCon ul li span:nth-child(1){
+    border-left: 2px solid #224592;
+    position: absolute;
+    top:50%;
+    transform: translateY(-7.5px);
+    height: 15px;
+}
+.Line{
+    border-left: 2px solid #224592;
+    height: 15px;
+    padding-right: 20px; ;
+}
+.leaveWords .name{
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(131, 131, 131,1);
+}
+.InputBox{
+    display: flex;
+    justify-content: space-between;
+    /*margin-bottom: 45px;*/
+}
+.InputBoxDel{
+    margin-top: 20px;
+    /*width: 272px;*/
+    height: 45px;
+    border: 1px solid rgba(240,240,240,1);
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+}
+.leaveWordsContentDel{
+    height: 165px;
+    /*width: 100%;*/
+    margin-top: 20px;
+    border: 1px solid rgba(240,240,240,1);
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+input[type=submit]{
+    /*width: 150px;*/
+    height: 35px;
+    background-color:#224592 ;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 10px;
+
+    border: none;
+}
+input[type=reset]{
+    /*width: 150px;*/
+    height: 35px;
+    background-color:#fff ;
+    color: #224592;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 10px;
+    border: 2px solid #224592;
+    /*margin-left: 40px;*/
+}
+.leaveWordsBtn{
+    margin-top: 60px;
+    /*padding-left: 35px;*/
+}
+/*人才招聘*/
+.Recruitment{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid rgba(242,242,242,1);
+}
+.Recruitment div{
+    font-size: 16px;
+    font-weight: bold;
+    color: #224592;
+    width: 18%;
+    letter-spacing: 1px;
+}
+.Recruitment ul{
+    width: 78%;
+}
+.Recruitment ul li{
+    margin-bottom: 10px;
+    color: rgba(131, 131, 131,1);
+}
+.Recruitment ul li:nth-last-child(1){
+    margin: 0;
+}
+.Recruitment ul li span{
+    display: inline-block;
+    margin-top: -20px;
+    padding-left: 20px;
+}
+@media (max-width: 990px){
+    .about-container-left{
+        display: none;
+    }
+    .about-container{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding:0 20px;
+    }
+}

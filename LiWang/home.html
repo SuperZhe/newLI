@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>丽王网站</title>
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link rel="stylesheet" href="./public/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/Reset.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <script src="./public/jquery/dist/jquery.min.js"></script>
+    <script src="./public/fontSize.js"></script>
+    <script src="./public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script>
+        var _homeHt = $(window).width();
+    </script>
+    <script src="./project/home.js"></script>
+    <script src="./project/footer.js"></script>
+
+</head>
+<body >
+<!--轮播-->
+<div id="circleContent" class="carousel slide">
+    <ol class="carousel-indicators">
+    <li data-target="#circleContent" data-slide-to="0" class="active"></li>
+    <li data-target="#circleContent" data-slide-to="1"></li>
+    <li data-target="#circleContent" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="./images/KV/lunbo-02.png" class="circleContentImg">
+            <!--<div class="carousel-caption">IMG1</div>-->
+        </div>
+        <div class="item">
+            <img src="./images/KV/lunbo-03.png" class="circleContentImg">
+            <!--<div class="carousel-caption">IMG2</div>-->
+        </div>
+        <div class="item">
+            <img src="./images/KV/1.jpg" class="circleContentImg">
+            <!--<div class="carousel-caption">IMG3</div>-->
+        </div>
+    </div>
+    <a class="left unShow circleContent" href="#circleContent"
+       data-slide="prev"><img src="./images/JT-kv.png" alt="图片加载失败" class="TopLeft"></a>
+    <a class=" right unShow circleContent" href="#circleContent"
+       data-slide="next"><img src="./images/JT-kv.png" alt="图片加载失败" class="TopRight"></a>
+    <div class="KV col-xs-12 col-lg-12 col-md-12 col-sm-12">
+        <img src="./images/KV/KV_BG.png" alt="图片加载失败">
+    </div>
+</div>
+<!--内容-->
+<div class="fixedTop">
+    <nav class="navbar navbar-default" role="navigation">
+        <section class="container">
+            <div class="row">
+                <!--导航-->
+                <div class="container-fluid col-sm-12">
+                    <div class="navbar-header">
+                        <a type="button" class="navbar-toggle NavBtn" data-toggle="collapse"
+                           data-target="#example-navbar-collapse">
+                            <!--<span class="sr-only">切换导航</span>-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" class="Login-nav"
+                                                              alt="图片加载失败"></a>
+                        <a href="javascript:;" class="navbar-brand-img navbar-toggle">En</a>
+                        <a href="javascript:;" class="navbar-brand-img navbar-toggle MobileSearch"><img
+                                src="./images/icon_research.png"
+                                alt="图片加载失败"></a>
+                    </div>
+                    <div class="search"><input type="text" placeholder="请输入产品型号"><img
+                            src="./images/icon-fangdajing-01.svg" alt="图片加载失败"><i>En</i></div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav navClick">
+                            <li class="activeH"><a href="./home.html" class="homeTop"><span >首页</span></a></li>
+                            <li data-type="1" class="dropdown"><a href="./product.html"><span>产品中心</span></a>
+                                <div class="dropdown-menu proDetails">
+                                        <div class="classify">
+                                            <h3>有机颜料 <img src="./images/logo-icon.png" alt="图片加载失败"></h3>
+                                            <ul>
+                                                <li><span></span><a href="./product.html?about=0">油墨用有机颜料</a></li>
+                                                <li><span></span><a href="./product.html?about=1">涂料用有机颜料</a></li>
+                                                <li><span></span><a href="./product.html?about=2">塑胶用有机颜料</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="proDetailsLine"></div>
+                                        <div class="classify col">
+                                            <h3><a href="./product.html?proD=1">荧光颜料</a> <img src="./images/logo-icon.png" alt="图片加载失败"></h3>
+                                            <ul>
+                                                <li><span></span><a href="./product.html?proD=1#light0">LFB系列有机颜料</a></li>
+                                                <li><span></span><a href="./product.html?proD=1#light11">LD系列有机颜料</a></li>
+                                                <li><span></span><a href="./product.html?proD=1#light25">LFL系列有机颜料</a></li>
+                                                <li><span></span><a href="./product.html?proD=1#light36">LPA系列有机颜料</a></li>
+                                            </ul>
+                                        </div>
+                                    <div class="proDetailsLine"></div>
+                                        <div class="classify">
+                                            <h3><a href="./product.html?proD=2">水性色浆</a> <img src="./images/logo-icon.png" alt="图片加载失败"></h3>
+                                            <ul>
+                                                <li><span></span><a href="./product.html?proD=2#base0">8系列水性色浆</a></li>
+                                                <li><span></span><a href="./product.html?proD=2#base30">B系列水性色浆</a></li>
+                                                <li><span></span><a href="./product.html?proD=2">F系列水性色浆</a></li>
+                                                <li><span></span><a href="./product.html?proD=2">Q系列水性色浆</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li data-type="2"  class="dropdown dropdown-1">
+                                <a href="./about.html">
+                                    <span>关于丽王</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-1">
+                                    <li><a href="./about.html?about=0">企业简介</a></li>
+                                    <li><a href="./about.html?about=1">企业荣誉</a></li>
+                                    <li><a href="./about.html?about=2">绿色丽王</a></li>
+                                    <li><a href="./about.html?about=3">视频中心</a></li>
+                                </ul>
+                            </li>
+                            <li data-type="3"  class="dropdown dropdown-1 "><a href="./strength.html"><span>丽王实例</span></a>
+                                <ul class="dropdown-menu dropdown-menu-1 strengthNav">
+                                    <li><a href="./strength.html?about=1">全面的检测中心</a></li>
+                                    <li><a href="./strength.html?about=2">整洁的生产车间</a></li>
+                                    <li><a href="./strength.html?about=3">优雅的企业环境</a></li>
+                                    <li><a href="./strength.html?about=4">领先的污水处理</a></li>
+                                    <li><a href="./strength.html?about=5">先进的检测设备</a></li>
+                                </ul>
+                            </li>
+                            <li data-type="4" class="dropdown dropdown-1"><a href="./news.html"><span>企业动态</span></a>
+                                <ul class="dropdown-menu dropdown-menu-1">
+                                    <li><a href="./news.html?about=0">丽王新闻</a></li>
+                                    <li><a href="./news.html?about=1">行业资讯</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                            <li data-type="5" class="dropdown dropdown-1"><a href="./contactUs.html"><span>联系我们</span></a>
+                                <ul class="dropdown-menu dropdown-menu-1">
+                                    <li><a href="./contactUs.html?about=0">联系我们</a></li>
+                                    <li><a href="./contactUs.html?about=1">在线留言</a></li>
+                                    <li><a href="./contactUs.html?about=2">人才招聘</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;" class="homeTop"><span></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="pull-down">
+            <div class="close-search"><span></span><span></span></div>
+            <div class="startSearch"><img src="./images/icon_research.png" alt="图片加载失败"><input type="text" placeholder="输入产品型号">
+                <p>点击进行搜索</p>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="mobileHeader">
+    <div class="navHeader">
+        <a href="javascript:;" class="logo"><img src="./images/logo.png" alt=""></a>
+        <div class="navLeft">
+            <span>En</span>
+            <span><img src="images/icon_research.png"  class="MobileSearch"></span>
+            <div class="couser">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <ul class="ulNav">
+        <li><a href="javascript:;">首页</a></li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-2">产品中心<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-2">
+                <li><a href="./product.html?proD=0" data-toggle="collapse" data-target="#content-4">有机颜料</a>
+                    <ul class="collapse secondLevel" id="content-4">
+                        <li><a href="./product.html?about=0">油墨用有机颜料</a></li>
+                        <li><a href="./product.html?about=1">涂料用有机颜料</a></li>
+                        <li><a href="./product.html?about=2">塑胶用有机颜料</a></li>
+                    </ul>
+                </li>
+                <li><a href="./product.html?proD=1"  data-toggle="collapse" data-target="#content-5">荧光颜料</a>
+                    <ul class="collapse secondLevel" id="content-5">
+                        <li><a href="./product.html?proD=1#light0">LFB系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1#light11">LD系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1#light25">LFL系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1#light36">LPA系列有机颜料</a></li>
+                    </ul>
+                </li>
+                <li><a href="./product.html?proD=2" data-toggle="collapse" data-target="#content-5">水性色浆</a>
+                    <ul class="collapse secondLevel" id="content-6">
+                        <li><a href="./product.html?proD=2#base0">8系列水性色浆</a></li>
+                        <li><a href="./product.html?proD=2#base30">B系列水性色浆</a></li>
+                        <li><a href="./product.html?proD=2">F系列水性色浆</a></li>
+                        <li><a href="./product.html?proD=2">Q系列水性色浆</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-3">关于丽王<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-3">
+                <li><a href="./about.html?about=0">企业简介</a></li>
+                <li><a href="./about.html?about=1">企业荣誉</a></li>
+                <li><a href="./about.html?about=2">绿色丽王</a></li>
+                <li><a href="./about.html?about=3">视频中心</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-two">丽王实力<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-two">
+                <li><a href="./strength.html?about=1">全面的检测中心</a></li>
+                <li><a href="./strength.html?about=2">整洁的生产车间</a></li>
+                <li><a href="./strength.html?about=3">优雅的企业环境</a></li>
+                <li><a href="./strength.html?about=4">领先的污水处理</a></li>
+                <li><a href="./strength.html?about=5">先进的检测设备</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-one">企业动态<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-one">
+                <li><a href="./news.html?about=0">丽王新闻</a></li>
+                <li><a href="./news.html?about=1">行业资讯</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-1">联系我们<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-1">
+                <li><a href="./contactUs.html?about=0">联系我们</a></li>
+                <li><a href="./contactUs.html?about=1">在线留言</a></li>
+                <li><a href="./contactUs.html?about=2">人才招聘</a></li>
+            </ul></li>
+    </ul>
+    <div class="pull-down">
+        <div class="close-search"><span></span><span></span></div>
+        <div class="startSearch"><img src="./images/icon_research.png" alt="图片加载失败"><input type="text"placeholder="输入产品型号">
+            <p>点击进行搜索</p>
+        </div>
+    </div>
+</div>
+<!--第二部分内容-->
+<div class="bg2">
+    <div class="container-3">
+        <section class="dreamsColor">
+            <div class="container-body">
+                <div class="row">
+                    <div class="col-md-4 col-sm-8 col-xs-8 col-md-offset-4 col-sm-offset-2 col-xs-offset-2  dreamSlogan">
+                        <img src="./images/slogan.jpg" alt="图片加载失败" class="dreamSloganImg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bg">
+                    <div class=" col-sm-offset-0 col-xs-12 col-xs-offset-0 col-sm-12 col-md-8 col-md-offset-2 HomeProduct">
+                        <div class="row productCenterMobile">
+                            <div class=" col-sm-4 col-xs-4  col-sm-offset-4 col-md-2 col-md-offset-1 col-xs-offset-4 productPC">
+                                <img src="./images/title_products.png" alt="图片加载失败"></div>
+                            <div class=" col-sm-3 col-xs-2 col-sm-offset-1 col-md-2 col-md-offset-0  col-xs-offset-2 Pro_one">
+                                <a href="./product.html?about=0"><img src="./images/btn_OrganicPigments.png" alt="图片加载失败"></a></div>
+                            <div class=" col-sm-3 col-xs-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-offset-1 Pro_one Pro_Three">
+                                <a href="javascript:;"><img src="./images/btn_-FluorescentPigments.png" alt="图片加载失败"></a></div>
+                            <div class=" col-sm-3  col-xs-2  col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-offset-1 Pro_one">
+                                <a href="javascript:;"><img src="./images/btn_ColorPaste.png" alt="图片加载失败"></a></div>
+                        </div>
+                    </div>
+                    <div class="MobilePro">
+                        <div class=" proMobCen">产品中心</div>
+                        <div class="materialsMob">
+
+                            <a href="./product.html?about=0"><img src="./images/btn_OrganicPigments.png" alt="图片加载失败"></a>
+
+                            <img src="./images/btn_-FluorescentPigments.png" alt="图片加载失败">
+
+                            <img src="./images/btn_ColorPaste.png" alt="图片加载失败">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-8 col-md-offset-4 col-sm-offset-3 col-xs-offset-2 dreamSlogan">
+                            <img src="./images/logo-icon.png" alt="图片加载失败" style="margin-top: -6px;">
+                            &nbsp;<span class="title">选择丽王的六大理由</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="ground reason">
+                                <div class="col-sm-4 col-md-3 col-xs-12 col-sm-offset-1 col-lg-3 col-lg-offset-0  col-md-offset-0 col-xs-offset-0 advantage">
+                                    <div><img src="./images/icon_20years.png" alt="图片加载失败"></div>
+                                    <h3>20年的努力</h3>
+                                    <p>丽王科技股份经过近20年的不懈努力，现成为国内最大的有机颜料及水性色浆生产供应商之一。</p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-2 col-lg-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage advantage-1">
+                                    <div><img src="./images/icon_honor.png" alt="图片加载失败"></div>
+                                    <h3>全国认证荣誉</h3>
+                                    <p>通过了ISO9001：2008认证、ISO14001：2004认证及INTERTEK绿色认证，荣获“全国家纺面料印染色浆示范中心”，“中国著名品牌”等荣誉称号。</p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-1 col-lg-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage ">
+                                    <div><img src="./images/icon_innovate.png" alt="图片加载失败"></div>
+                                    <h3>注重科技创新</h3>
+                                    <p>公司注重科技创新，现已形成红、黄、蓝、绿、橙、荧光系列有机颜料、环保系列有机颜料、水性色浆、印染助剂等产品。</p>
+                                </div>
+                            </div>
+                            <div class="ground reason">
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-2 col-lg-3 col-lg-offset-0  col-md-offset-0 col-xs-offset-0 advantage advantage-1">
+                                    <div><img src="./images/icon_technology.png" alt="图片加载失败"></div>
+                                    <h3>引进先进工艺</h3>
+                                    <p>江苏丽王科技有限公司注重科技创新，积极引进国外先进工艺，重点开发生产喹丫啶酮、DPP、偶氮缩合、邶系类的高档产品，引进国际一流的工装设备。</p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-1 col-lg-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage ">
+                                    <div><img src="./images/icon_economics.png" alt="图片加载失败"></div>
+                                    <h3>注重环保经济</h3>
+                                    <p>采用国际最先进的微生物修复法处理污水，使污水的各项指标稳定控制在国家一级排放标准之内，确保企业长期可持续发展。</p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-2 col-lg-3  col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage advantage-1">
+                                    <div><img src="./images/icon_company.png" alt="图片加载失败"></div>
+                                    <h3>丽王公司宗旨</h3>
+                                    <p>“科技为动力，市场为导向”生产理念，“信誉第一，用户至上”经营理念，“持续创造客户价值”的服务理念，不断开拓创新，创世界品牌，铸百年丽王！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-4">
+        <div class="container-body">
+            <div class="row">
+                <div class="milestone">
+                    <div class="col-md-6 col-xs-12 milestone-left">
+                        <!--<img src="./images/images-01.jpg" alt="图片加载失败" class="milestone-left">-->
+                    </div>
+                    <div class="col-md-6 col-xs-12 ">
+                        <div class="growUp">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="historyT col-sm-4 col-sm-offset-3 col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-7">
+                                        <img src="./images/logo-icon.png" alt="图片加载失败">
+                                        &nbsp;<span class="title">丽王里程碑</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 con_history">
+                                        <ul>
+                                            <li><span class="yearTime">2015</span><span
+                                                    class="lineFont">
+                                        丽王科技正式更名为"丽王科技股份"
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">2013</span>
+                                                <span class="lineFont">
+                                        成就中国著名品牌--丽王科技
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li>
+                                                <span class="yearTime">2012</span>
+                                                <span class="lineFont">
+                                        首获江苏省高新技术企业荣誉认证
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li class="overtopLi">
+                                                <span class="yearTime">2011</span>
+                                                <p class="lineFont overtop" style="text-align: left">
+                                            <span>
+                                            被评为全国家纺面料创新示范中心。公司研发中心被评为南通市工程技术研究中心通过KOSHER认证，Intertek绿色认证<br>
+                                            收购通州市江石化工厂，生产酞菁系列有机颜料提升了产品的品质和企业的竞争力
+                                            </span>
+                                                <p class="line-p"></p>
+                                                </p>
+                                            </li>
+                                            <li><span class="yearTime">2010</span>
+                                                <span class="lineFont lineFont-1 ">
+                                        生产基地全面竣工。成功申报发明专利8项 实用新专利8项
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">2009</span><span
+                                                    class="lineFont lineFont-1 overtop-1">
+                                        成立了江苏丽王科技有限公司于盐城澳洋科技园作为新公司的生产基地
+                                    </span>
+                                                <p class="line-p"></p>
+                                            <li><span class="yearTime">2008</span><span
+                                                    class="lineFont">
+                                        首次申报江苏省著名商标成功
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li>
+                                                <span class="yearTime">2005</span>
+                                                <span class="lineFont lineFont-1 overtop">
+                                            收购通州市江石化工厂，生产酞菁系列有机颜料提升了产品的品质和企业的竞争力
+                                        </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">2002</span>
+                                                <span class="lineFont overtop">
+                                            成立通州市丽王化工有限公司：开始生产纺织印花浆专用有机颜料
+                                            引进最新的荧光颜料合成技术，开发生产水性色浆用荧光颜料
+                                        </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">1995</span><span
+                                                    class="lineFont lineFont-1">
+                                        生产基地全面竣工。成功申报发明专利8项 实用新专利8项
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="journalism">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="journalism-content">
+                            <div class="row">
+                                <div class="col-xs-4 col-xs-offset-4 col-sm-5 col-sm-offset-1">
+                                    <img src="./images/logo-icon.png" alt="图片加载失败">
+                                    &nbsp;<span class="title">新闻资讯</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 HomeNews">
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 journalism-right">
+                        <img src="./images/images-02.jpg" alt="图片加载失败" class="journalism-right">
+                    </div>
+                </div>
+                <div class="journalism-1">
+                    <div class="col-md-6 col-xs-12">
+                        <img src="./images/images-02.jpg" alt="图片加载失败" class="img-responsive">
+                    </div>
+                    <div class="journalism-content">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-6 col-xs-offset-4 col-sm-3 col-sm-offset-5">
+                                    <img src="./images/logo-icon.png" alt="图片加载失败">
+                                    &nbsp;<span class="title">新闻资讯</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 journalismMobile HomeNews">
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row bottomLun">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-5 col-xs-6 col-md-offset-4 col-sm-offset-3 col-xs-offset-3 dreamSlogan">
+                            <img src="./images/logo-icon.png" alt="图片加载失败" style="margin-top: -6px;">
+                            &nbsp;<span class="title">丽王科技企业荣誉</span>
+                        </div>
+                    </div>
+                    <div id="example" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ul class="row item active">
+                                <li class="col-xs-2">
+                                    <img src="images/LiHonor/01.png" srcset="images/LiHonor/01.png 1x,images/LiHonor/01.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2">
+                                    <img src="images/LiHonor/02.png" srcset="images/LiHonor/02.png 1x,images/LiHonor/02.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 three">
+                                    <img src="images/LiHonor/03.png" srcset="images/LiHonor/03.png 1x,images/LiHonor/03.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 four">
+                                    <img src="images/LiHonor/04.png" srcset="images/LiHonor/04.png 1x,images/LiHonor/04.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 five">
+                                    <img src="images/LiHonor/05.png" srcset="images/LiHonor/05.png 1x,images/LiHonor/05.png 2x" class="img-responsive">
+                                </li>
+                            </ul>
+                            <ul class="row item">
+                                <li class="col-xs-2 six">
+                                    <img src="images/LiHonor/06.png" srcset="images/LiHonor/06.png 1x,images/LiHonor/06.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 seven">
+                                    <img src="images/LiHonor/07.png" srcset="images/LiHonor/07.png 1x,images/LiHonor/07.png 2x" class="img-responsive">
+                                </li>
+                                <!--<li class="col-xs-2 eight">-->
+                                <!--<img src="images/LiHonor/01.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">-->
+                                <!--</li>-->
+                                <!--<li class="col-xs-2 nine">-->
+                                <!--<img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">-->
+                                <!--</li>-->
+                                <!--<li class="col-xs-2 ten">-->
+                                <!--<img src="images/1.png" srcset="images/1.png 1x,images/1.png 2x" class="img-responsive">-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                        <a class=" left" href="#example" data-slide="prev"><img src="./images/jiantou-rongyu.png" alt="图片加载失败"
+                                                                                class="footerLeft"></a>
+                        <a class=" right" href="#example" data-slide="next"><img src="./images/jiantou-rongyu.png" alt="图片加载失败" class="footerRight"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

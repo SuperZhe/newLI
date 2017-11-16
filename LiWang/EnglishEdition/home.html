@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>丽王网站</title>
+    <link rel="stylesheet" href="../public/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/Reset.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="../public/jquery/dist/jquery.min.js"></script>
+    <script src="../public/fontSize.js"></script>
+    <script src="../public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script>
+        var _homeHt = $(window).width();
+    </script>
+    <script src="./project/home.js"></script>
+    <script src="./project/footer.js"></script>
+
+</head>
+<body>
+<!--轮播-->
+<div id="circleContent" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#circleContent" data-slide-to="0" class="active"></li>
+        <li data-target="#circleContent" data-slide-to="1"></li>
+        <li data-target="#circleContent" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="../images/KV/lunbo-02.png" class="circleContentImg">
+            <!--<div class="carousel-caption">IMG1</div>-->
+        </div>
+        <div class="item">
+            <img src="../images/KV/lunbo-03.png" class="circleContentImg">
+            <!--<div class="carousel-caption">IMG2</div>-->
+        </div>
+        <div class="item">
+            <img src="../images/KV/1.jpg" class="circleContentImg">
+            <!--<div class="carousel-caption">IMG3</div>-->
+        </div>
+    </div>
+    <a class="left unShow circleContent" href="#circleContent"
+       data-slide="prev"><img src="../images/JT-kv.png" alt="图片加载失败" class="TopLeft"></a>
+    <a class=" right unShow circleContent" href="#circleContent"
+       data-slide="next"><img src="../images/JT-kv.png" alt="图片加载失败" class="TopRight"></a>
+    <div class="KV col-xs-12 col-lg-12 col-md-12 col-sm-12">
+        <img src="../images/KV/KV_BG.png" alt="图片加载失败">
+    </div>
+</div>
+<!--内容-->
+<div class="fixedTop">
+    <nav class="navbar navbar-default navbar-fixed-top PCheader" role="navigation">
+        <section class="container">
+            <div class="row">
+                <!--导航-->
+                <div class="container-fluid col-sm-12">
+                    <div class="navbar-header">
+                        <a type="button" class="navbar-toggle NavBtn" data-toggle="collapse"
+                           data-target="#example-navbar-collapse">
+                            <!--<span class="sr-only">切换导航</span>-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" class="Login-nav"
+                                                              alt="图片加载失败"></a>
+                        <a href="javascript:;" class="navbar-brand-img navbar-toggle">简</a>
+                        <a href="javascript:;" class="navbar-brand-img navbar-toggle MobileSearch"><img
+                                src="./images/icon_research.png"
+                                alt="图片加载失败"></a>
+                    </div>
+                    <div class="search"><input type="text" placeholder="Enter product model"><img
+                            src="./images/icon-fangdajing-01.svg" alt="图片加载失败"><i>简</i></div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav navClick">
+                            <li><a href="./home.html"  class="homeTop"><span>Home</span></a></li>
+                            <li data-type="1" class="dropdown"><a href="./product.html" ><span>Products</span></a>
+                                <div class="dropdown-menu proDetails">
+                                    <div class="classify">
+                                        <h3>Organic Pigments<img src="./images/logo-icon.png" alt="图片加载失败"></h3>
+                                        <ul>
+                                            <li><span></span><a href="./product.html?about=0">Ink organic pigments</a></li>
+                                            <li><span></span><a href="./product.html?about=1">Organic pigments for plastics</a></li>
+                                            <li><span></span><a href="./product.html?about=2">Organic pigments for paints</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="proDetailsLine"></div>
+                                    <div class="classify col">
+                                        <h3>Fluorescent Pigments<img src="./images/logo-icon.png" alt="图片加载失败"></h3>
+                                        <ul>
+                                            <li><span></span>Aqueous fluorescent pigment</li>
+                                            <li><span></span>Plastic fluorescent pigment</li>
+                                        </ul>
+                                    </div>
+                                    <div class="proDetailsLine"></div>
+                                    <div class="classify">
+                                        <h3 class="threeFy">Sejiang <img src="./images/logo-icon.png" alt="图片加载失败"></h3>
+                                        <ul>
+                                            <li><span></span>8 series of water-based paste</li>
+                                            <li><span></span>B series of water-based paste</li>
+                                            <li><span></span>F series of water-based paste</li>
+                                            <li><span></span>Q series of water-based paste</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-type="2"  class="dropdown dropdown-1">
+                                <a href="./about.html" >
+                                    <span>About</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-1">
+                                    <li><a href="./about.html?about=0">company profile</a></li>
+                                    <li><a href="./about.html?about=1">Honors</a></li>
+                                    <li><a href="./about.html?about=2">Green Li Wang</a></li>
+                                    <li><a href="./about.html?about=3">Message from the Chairman</a></li>
+                                </ul>
+                            </li>
+                            <li data-type="3" class="dropdown dropdown-1"><a href="./strength.html"><span>Lynwon</span> </a>
+                                <ul class="dropdown-menu dropdown-menu-1 strengthNav proDetails">
+                                    <li><a href="./strength.html?about=0">Comprehensive testing center</a></li>
+                                    <li><a href="./strength.html?about=1">Tidy production area</a></li>
+                                    <li><a href="./strength.html?about=2">Elegant corporate environment</a></li>
+                                    <li><a href="./strength.html?about=3">Leading sewage treatment</a></li>
+                                    <li><a href="./strength.html?about=4">Advanced detection equipment</a></li>
+                                </ul>
+                            </li>
+                            <li data-type="4"  class="dropdown dropdown-1"><a href="./news.html"><span>News</span></a>
+                                <ul class="dropdown-menu dropdown-menu-1">
+                                    <li><a href="./news.html?about=0">Li Wang News</a></li>
+                                    <li><a href="./news.html?about=1">Industry News</a></li>
+                                </ul>
+                            </li>
+                            <li data-type="5" class="dropdown dropdown-1"><a href="./contactUs.html"><span>Contact us</span></a>
+
+                                <ul class="dropdown-menu dropdown-menu-1">
+                                    <li><a href="./contactUs.html?about=0">Contact us</a></li>
+                                    <li><a href="./contactUs.html?about=1">Online message</a></li>
+                                    <li><a href="./contactUs.html?about=2">recruitment</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;" class="homeTop"><span></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="one dropdown-menu-2"></div>
+        <div class="two dropdown-menu-2"></div>
+        <div class="pull-down">
+            <div class="close-search"><span></span><span></span></div>
+            <div class="startSearch"><img src="./images/icon_research.png" alt="图片加载失败"><input type="text"placeholder="Enter product model">
+                <p>Click to search</p>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="mobileHeader">
+    <div class="navHeader">
+        <a href="javascript:;" class="logo"><img src="./images/logo.png" alt=""></a>
+        <div class="navLeft">
+            <span>简</span>
+            <span><img src="images/icon_research.png" alt="" class="MobileSearch"></span>
+            <div class="couser">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <ul class="ulNav">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-2">Products <i>+</i></a>
+            <ul class="collapse secondLevel" id="content-2">
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-4">Organic Pigments</a>
+                    <ul class="collapse secondLevel" id="content-4">
+                        <li><a href="./product.html?about=0">Ink organic pigments</a></li>
+                        <li><a href="./product.html?about=1">Organic pigments for plastics</a></li>
+                        <li><a href="./product.html?about=2">Organic pigments for paints</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;"  data-toggle="collapse" data-target="#content-5">Fluorescent Pigments</a>
+                    <ul class="collapse secondLevel" id="content-5">
+                        <li><a href="./about.html?about=0">Aqueous fluorescent pigment</a></li>
+                        <li><a href="./about.html?about=1">Plastic fluorescent pigment</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-5">Sejiang</a>
+                    <ul class="collapse secondLevel" id="content-6">
+                        <li><a href="./about.html?about=0">8 series of water-based paste</a></li>
+                        <li><a href="./about.html?about=1">B series of water-based paste</a></li>
+                        <li><a href="./about.html?about=1">F series of water-based paste</a></li>
+                        <li><a href="./about.html?about=1">Q series of water-based paste</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-3">About<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-3">
+                <li><a href="./about.html?about=0">company profile</a></li>
+                <li><a href="./about.html?about=1">Honors</a></li>
+                <li><a href="./about.html?about=2">Green Li Wang</a></li>
+                <li><a href="./about.html?about=3">Video Center</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-two">Lynwon<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-two">
+                <li><a href="./strength.html?about=0">Comprehensive testing center</a></li>
+                <li><a href="./strength.html?about=1">Tidy production area</a></li>
+                <li><a href="./strength.html?about=2">Elegant corporate environment</a></li>
+                <li><a href="./strength.html?about=3">Leading sewage treatment</a></li>
+                <li><a href="./strength.html?about=4">Advanced detection equipment</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-one">News<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-one">
+                <li><a href="./news.html?about=0">Li Wang News</a></li>
+                <li><a href="javaScript:;" data-toggle="collapse" data-target="#content-Q">Industry News</a>
+                    <ul class="collapse secondLevel" id="content-Q">
+                        <li><a href="./news.html?about=1&type=ymtl">Ink coating</a></li>
+                        <li><a href="./news.html?about=1&type=sjyr">Plastic printing materia</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:;" data-toggle="collapse" data-target="#content-1">Contact us<i>+</i></a>
+            <ul class="collapse secondLevel" id="content-1">
+                <li><a href="./contactUs.html?about=0">Contact us</a></li>
+                <li><a href="./contactUs.html?about=1">Online message</a></li>
+                <li><a href="./contactUs.html?about=2">recruitment</a></li>
+            </ul></li>
+    </ul>
+    <div class="pull-down">
+        <div class="close-search"><span></span><span></span></div>
+        <div class="startSearch"><img src="./images/icon_research.png" alt="图片加载失败"><input type="text"placeholder="Enter product model">
+            <p>Click to search</p>
+        </div>
+    </div>
+</div>
+<!--第二部分内容-->
+<div class="bg2">
+    <div class="container-3">
+        <section class="dreamsColor">
+            <div class="container-body">
+                <div class="row">
+                    <div class="col-md-4 col-sm-8 col-xs-8 col-md-offset-4 col-sm-offset-2 col-xs-offset-2  dreamSlogan">
+                        <img src="../images/slogan.jpg" alt="图片加载失败" class="dreamSloganImg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bg">
+                    <div class=" col-sm-offset-0 col-xs-12 col-xs-offset-0 col-sm-12 col-md-8 col-md-offset-2 HomeProduct">
+                        <div class="row productCenterMobile">
+                            <div class=" col-sm-4 col-xs-4  col-sm-offset-4 col-md-2 col-md-offset-1 col-xs-offset-4 productPC">
+                                <img src="../images/title_products.png" alt="图片加载失败"></div>
+                            <div class=" col-sm-3 col-xs-2 col-sm-offset-1 col-md-2 col-md-offset-0  col-xs-offset-2 Pro_one">
+                                <a href="javascript:;"><img src="../images/btn_-FluorescentPigments.png" alt="图片加载失败"></a></div>
+                            <div class=" col-sm-3 col-xs-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-offset-1 Pro_one Pro_Three">
+                                <a href="javascript:;"><img src="../images/btn_ColorPaste.png" alt="图片加载失败"></a></div>
+                            <div class=" col-sm-3  col-xs-2  col-sm-offset-1 col-md-2 col-md-offset-1 col-xs-offset-1 Pro_one">
+                                <a href="/product.html?about=0"><img src="../images/btn_OrganicPigments.png" alt="图片加载失败"></a></div>
+                        </div>
+                    </div>
+                    <div class="MobilePro">
+                        <div class=" proMobCen">Product center</div>
+                        <div class="materialsMob">
+
+                            <a href="./product.html?about=0"><img src="./images/btn_OrganicPigments.png" alt="图片加载失败"></a>
+
+                            <img src="./images/btn_-FluorescentPigments.png" alt="图片加载失败">
+
+                            <img src="./images/btn_ColorPaste.png" alt="图片加载失败">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-8 col-md-offset-4 col-sm-offset-3 col-xs-offset-2 dreamSlogan">
+                            <img src="../images/logo-icon.png" alt="图片加载失败" style="margin-top: -6px;">
+                            &nbsp;<span class="title">Choose six reasons lynwon</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="ground reason">
+                                <div class="col-sm-4 col-md-3 col-xs-12 col-sm-offset-1 col-lg-3 col-lg-offset-0  col-md-offset-0 col-xs-offset-0 advantage">
+                                    <div><img src="../images/icon_20years.png" alt="图片加载失败"></div>
+                                    <h3>20 years of efforts</h3>
+                                    <p>Lynwon technology after nearly 20 years of unremitting
+                                        efforts now has  become the largest  production of
+                                        organic pigment and water-based paste suppliers
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-2 col-lg-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage advantage-1">
+                                    <div><img src="../images/icon_honor.png" alt="图片加载失败"></div>
+                                    <h3>national certification honor</h3>
+                                    <p>Throuch the IS09001:2008 certification ISO14001:2004
+                                        certification and intertek green certification,won the
+                                        "national demonstration center paste printing
+                                        and dyeing textile fabrics ",
+                                        "chinese famous brand"and the honorary title.
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-1 col-lg-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage ">
+                                    <div><img src="../images/icon_innovate.png" alt="图片加载失败"></div>
+                                    <h3>Focusing on environmental technology</h3>
+                                    <p>Companine pay  attention to technological innovation,
+                                        has been formed red，yellow，blue，green，orange，
+                                        fluorescent series organic pigments，
+                                        environmental protection series of organic pigments，
+                                        water-based paste
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ground reason">
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-2 col-lg-3 col-lg-offset-0  col-md-offset-0 col-xs-offset-0 advantage advantage-1">
+                                    <div><img src="../images/icon_technology.png" alt="图片加载失败"></div>
+                                    <h3>The introduction of advanced technology</h3>
+                                    <p>jiangsu lynwon CO.,Ltd. technological innovation，
+                                        and actively introduce foreing  advanced technology,
+                                        focusing on development and production of quinacridone,
+                                        DPP,AZO condensation,bei department
+                                        of class of high-end products,
+                                        the introduction of world-class tooling equipment.
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-1 col-lg-3 col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage ">
+                                    <div><img src="../images/icon_economics.png" alt="图片加载失败"></div>
+                                    <h3>focus on green economy</h3>
+                                    <p>Using the most advanced sewage treatment microbial
+                                        remediation,so the indicators stabilized sewage
+                                        control in the national emission standards,
+                                        to ensure logn-term sustainable development of enterprises.
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-md-3 col-sm-offset-2 col-lg-3  col-lg-offset-0 col-md-offset-0 col-xs-offset-0 advantage advantage-1">
+                                    <div><img src="../images/icon_company.png" alt="图片加载失败"></div>
+                                    <h3>lynwon company mission</h3>
+                                    <p>"technology-driven,market-oriented
+                                        "production concept,"credibility first,users first"business
+                                        philosophy "continue to create customer value,
+                                        "the serivice concept,and constantly blaze new trails,
+                                        a word brand,casting a century renaissance king!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-4">
+        <div class="container-body">
+            <div class="row">
+                <div class="milestone">
+                    <div class="col-md-6 col-xs-12 milestone-left">
+                        <!--<img src="./images/images-01.jpg" alt="图片加载失败" class="milestone-left">-->
+                    </div>
+                    <div class="col-md-6 col-xs-12 ">
+                        <div class="growUp">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="historyT col-sm-5 col-sm-offset-6 col-xs-8 col-xs-offset-2 ">
+                                        <img src="../images/logo-icon.png" alt="图片加载失败">
+                                        &nbsp;<span class="title">The king milestone</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 con_history">
+                                        <ul>
+                                            <li><span class="yearTime">2015</span><span
+                                                    class="lineFont">
+                                       Liwang technology officially changed its name to "li wang technology shares"
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">2013</span>
+                                                <span class="lineFont">
+                                        Achievements China famous brand - king of the king technology
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li>
+                                                <span class="yearTime">2012</span>
+                                                <span class="lineFont">
+                                       The first prize is awarded by jiangsu provincial high-tech enterprise
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li class="overtopLi">
+                                                <span class="yearTime">2011</span>
+                                                <p class="lineFont overtop" style="text-align: left">
+                                            <span>
+                                            It was rated as the innovation demonstration center of home textile fabric.The research and development center of the company was awarded as the nantong engineering technology research center through KOSHER certification, Intertek green certification
+The purchase of tongzhou jiangshi chemical plant, the production of the phthalocyanine series organic pigment improves the quality of the products and the competitiveness of the enterprise
+                                            </span>
+                                                <p class="line-p"></p>
+                                                </p>
+                                            </li>
+                                            <li><span class="yearTime">2010</span>
+                                                <span class="lineFont lineFont-1 lineFont lineFont-1 overtop">
+                                        The production base is fully completed.Eight practical new patents for invention patents are successfully declared
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">2009</span><span
+                                                    class="lineFont lineFont-1 lineFont lineFont-1 overtop">
+                                        Jiangsu liwang science and technology co., LTD. Was established as a production base of yancheng aoyang science and technology park as the new company
+                                    </span>
+                                                <p class="line-p"></p>
+                                            <li><span class="yearTime">2008</span><span
+                                                    class="lineFont">
+                                        The first successful declaration of the famous trademark of jiangsu province
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li>
+                                                <span class="yearTime">2005</span>
+                                                <span class="lineFont lineFont-1 overtop">
+                                            The purchase of tongzhou jiangshi chemical plant, the production of the phthalocyanine series organic pigment improves the quality of the products and the competitiveness of the enterprise
+                                        </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">2002</span>
+                                                <span class="lineFont overtop">
+                                           Established tongzhou liwang chemical co., LTD. : to start production of special organic pigment for textile printing
+The introduction of new fluorescent pigment synthesis technology, development and production of water-based paste with a fluorescent dye
+                                        </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                            <li><span class="yearTime">1995</span><span
+                                                    class="lineFont lineFont-1 overtop">
+                                        Established tongzhou liwang chemical co., LTD. : to start production of special organic pigment for textile printing
+The introduction of new fluorescent pigment synthesis technology, development and production of water-based paste with a fluorescent dye
+                                    </span>
+                                                <p class="line-p"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="journalism">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="journalism-content">
+                            <div class="row">
+                                <div class="col-xs-4 col-xs-offset-4 col-sm-5 col-sm-offset-1">
+                                    <img src="../images/logo-icon.png" alt="图片加载失败">
+                                    &nbsp;<span class="title">News information</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 HomeNews">
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <a href="javascript:;">了解更多>></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <img src="../images/images-02.jpg" alt="图片加载失败" class="journalism-right">
+                    </div>
+                </div>
+                <div class="journalism-1">
+                    <div class="col-md-6 col-xs-12">
+                        <img src="./images/images-02.jpg" alt="图片加载失败" class="img-responsive">
+                    </div>
+                    <div class="journalism-content">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 ce" >
+                                    <img src="./images/logo-icon.png" alt="图片加载失败">
+                                    &nbsp;<span class="title">News information</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 journalismMobile HomeNews">
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                    <li>
+                                        <h3>剖析有机颜料用在印花中的方法</h3>
+                                        <p>随着科技的进步，在印花的生产中，用的不再是一些随便的颜料，现在用的最多的就属有机颜料了，<br>
+                                            在印花中用有机颜料，可以使印花看上去更加的美观，逼真。
+                                        </p>
+                                        <div class="found"><a href="javascript:;">了解更多>></a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row bottomLun">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 dreamSlogan">
+                            <img src="../images/logo-icon.png" alt="图片加载失败" style="margin-top: -6px;">
+                            &nbsp;<span class="title">Honor of king of science and technology</span>
+                        </div>
+                    </div>
+                    <div id="example" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ul class="row item active">
+                                <li class="col-xs-2">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 three">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 four">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 five">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                            </ul>
+                            <ul class="row item">
+                                <li class="col-xs-2 six">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 seven">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 eight">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 nine">
+                                    <img src="/images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                                <li class="col-xs-2 ten">
+                                    <img src="../images/1.png" srcset="../images/1.png 1x,../images/1.png 2x" class="img-responsive">
+                                </li>
+                            </ul>
+                        </div>
+                        <a class=" left" href="#example" data-slide="prev"><img src="../images/jiantou-rongyu.png" alt="图片加载失败"
+                                                                                class="footerLeft"></a>
+                        <a class=" right" href="#example" data-slide="next"><img src="../images/jiantou-rongyu.png" alt="图片加载失败" class="footerRight"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>丽王网站</title>
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link rel="stylesheet" href="./public/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/Reset.css">
+    <link rel="stylesheet" href="style/news.css"/>
+    <link rel="stylesheet" href="./jqueryPagination/css/jquery.pagination.css">
+    <script src="./public/fontSize.js"></script>
+    <script src="./public/jquery/dist/jquery.js"></script>
+    <script src="./public/layer/layer.js"></script>
+    <script src="./public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        var _aboutHt = $(window).width();
+        var pageCount;
+    </script>
+    <script src="./jqueryPagination/js/jquery.pagination.min.js"></script>
+    <script src="./project/header.js"></script>
+    <script src="./project/news.js"></script>
+    <script src="./project/footer.js"></script>
+</head>
+<body>
+<div class="about-container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10 about-content">
+            <div class=' col-md-3 about-container-left'>
+                <div class="tittle tittle-1" data-type="xinwen" data-page="4" data-hide="0">
+                    <h3>丽王新闻 <img src="images/1F6133389107D7F690B8AEB7E95C3731.png"/></h3>
+                    <p>News</p>
+                </div>
+                <div class="tittle tittle-1" data-type="zixun" data-page="14" data-hide="1">
+                    <h3>行业咨询 <img src="images/1F6133389107D7F690B8AEB7E95C3731.png"/></h3>
+                    <p>Industry infomation</p>
+                </div>
+                <ul class="infomationSelect Industry">
+                    <li class="aboutNav"><a href="javascript:;" class='activeA' data-name="ymtl">油墨涂料</a></li>
+                    <li class="aboutNav"><a href="javascript:;" data-name="sjyr">塑胶印料</a></li>
+                </ul>
+                <div class="contact">
+                    <p>+ 86-13962738198</p>
+                    <p>江苏省盐城市阜宁高新技术产业园</p>
+                    <div><a href="./contactUs.html?about=0" class="connection">联系我们 &nbsp;&nbsp;<img src="./images/lianxi.png" alt="" style="height: 12px;"></a><img src="./images/weChart.svg" alt="图片加载失败" style="width: 35px;margin-left: 35px"></div>
+                </div>
+            </div>
+            <div class="">
+                <div class="intro con">
+                    <div class='col-md-8 col-md-offset-1 about-container-right'>
+                        <div class="tittle">
+                            <p class="left">丽王新闻 <img src="images/1F6133389107D7F690B8AEB7E95C3731.png"
+                                                      style="height: 20px;width: 20px"/></p>
+                            <p class="right">您的位置:主页>丽王新闻</p>
+                        </div>
+                        <div class="LiBlue">
+                            <ul class="newsList">
+
+                            </ul>
+                            <div id="pagination3" class="page fl"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro con">
+                    <div class='col-md-8 col-md-offset-1 about-container-right'>
+                        <div class="tittle">
+                            <p class="left">行业资讯 <img src="images/1F6133389107D7F690B8AEB7E95C3731.png"
+                                                      style="height: 20px;width: 20px"/></p>
+                            <p class="right">您的位置:主页>行业资讯</p>
+                        </div>
+                        <div class="LiBlue">
+                            <ul class="newsList">
+
+                            </ul>
+                            <div id="pagination1" class="page fl"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro con RightBox">
+                    <div class='col-md-8 col-md-offset-1 about-container-right'>
+                        <div class="tittle">
+                            <p class="left">行业资讯 <img src="images/1F6133389107D7F690B8AEB7E95C3731.png"
+                                                      style="height: 20px;width: 20px"/></p>
+                            <p class="right">您的位置:主页>视频中心</p>
+                        </div>
+                        <div class="VideoCenter">
+                            <div>
+                                <b class="VideoCenterTitle">&nbsp;&nbsp;江苏丽王科技有限公司企业宣传片</b>
+                                <span class="browse">浏览:347</span>
+                                <p class="Release" >发布时间: 2016-06-6 09:06</p>
+                            </div>
+                            <div class="newContent">
+
+                                <img src="" alt="图片的加载失败">
+                                <div class="newsNav">
+                                    <a href="javascript:;">上一篇：你是一个大二傻</a>
+                                    <a href="javascript:;">下一篇：你是一个大三傻</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $('.about-container-left ul li a').click(function () {
+        $(this).addClass('activeA').parent().siblings().find('a').removeClass('activeA')
+    })
+</script>
+</body>
+</html>
