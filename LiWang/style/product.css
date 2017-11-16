@@ -333,7 +333,7 @@
 
 }
 .productMagO li div {
-    padding: 25px 0;
+    /*padding: 25px 0;*/
 }
 .productMag li div{
     float: left;
@@ -342,6 +342,9 @@
     text-align: center;
     border-bottom: 1px solid #ddd;
     /*padding: 25px 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .productMag-1 li div{
     float: left;
