@@ -184,8 +184,13 @@
 #pageGro{ height:25px; margin:0px auto;margin-bottom: 40px;display: flex;justify-content: space-around}
 #pageGro div,#pageGro div ul li{ font-size:12px; color:rgba(34, 68, 145,1); line-height:25px; float:left; margin-left:5px;}
 #pageGro div ul li{ width:25px; text-align:center; cursor:pointer; border-radius: 50%}
-#pageGro div ul li.on{ color:#fff; background:#3c90d9;}
-#pageGro .pageUp,#pageGro .pageDown{ width:63px; text-indent:5px;color: rgba(34, 68, 145,1); cursor:pointer;}
+#pageGro div ul li.on{ color:#fff; background:rgba(33, 69, 145,1);}
+#pageGro .pageUp,#pageGro .pageDown{     width: 86px;
+    text-indent: 5px;
+    color: rgba(34, 68, 145,1);
+    cursor: pointer;
+    border: none;
+    background-color: #fff;}
 /*返回顶部*/
 .GoTop>img{
     transform: rotate(90deg);
@@ -369,4 +374,83 @@
 
 .proDetailsC{
     display: none;
+}
+/*手机页面荧光材料*/
+.lightMaterials{
+    margin-bottom: 35px;
+    width:25%;
+    /*display: inline-block;*/
+    float: left;
+}
+.mobilePages:after{
+    display: block;
+    clear: both;
+    visibility: hidden;
+    content: '';
+}
+.mobileTable:after{
+    display: block;
+    clear: both;
+    visibility: hidden;
+    content: '';
+}
+.lightMaterials>li{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 68, 145,1);
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.rub{
+    height: 160px !important;
+}
+.rub div:nth-child(1){
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid;
+     width: 50%;
+    /*padding: 0 10px;*/
+}
+.rub div:nth-last-child(1){
+    width:50%;
+    height:100%;
+}
+.rub div:nth-last-child(1) span{
+    /*display: block;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50%;
+}
+.rub div:nth-last-child(1) span:nth-child(1){
+    border-bottom: 1px solid #fff;
+}
+.lightProduct{
+    float: right;
+    width:75%;
+}
+.lightProduct>li{
+    float: left;
+    width:33.3%;
+}
+.lightProduct>li>div{
+    /*float: left;*/
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgba(34, 68, 145,1);*/
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+.lightProduct li:nth-child(even) {
+    background-color: #eee;
 }

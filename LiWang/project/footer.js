@@ -75,12 +75,12 @@ var _selfAdaption = `
 </div>
   <div class="friendship-mob">
                     <p>友情链接：</p>
-                    <a href="javascriot:;">内置百叶遮阳</a>
+                    <div><a href="javascriot:;">内置百叶遮阳</a>
                     <a href="javascriot:;">工业杀菌剂</a>
                     <a href="javascriot:;">石膏线</a>
-                    <a href="javascriot:;">彩瓦漆</a>
-                    <a href="javascriot:;">工业铝型材</a>
-                    <a href="javascriot:;">酒店四件套</a>
+                    <a href="javascriot:;">彩瓦漆</a></div>
+                    <div><a href="javascriot:;">工业铝型材</a>
+                    <a href="javascriot:;">酒店四件套</a></div>
     </div>
 </div>`
 

@@ -961,3 +961,6 @@ nav a{
         text-align: center !important;
     }
 }
+.newsContent strong{
+    font-size: 14px;
+}

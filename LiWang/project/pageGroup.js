@@ -98,7 +98,7 @@ function pageUp_click(pageCount,pageNum,index){
 		}
 	}+
 	
-	isPage(pageNum-1);
+	isPage(pageNum-2);
 }
 
 //点击数字按钮

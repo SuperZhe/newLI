@@ -124,25 +124,25 @@ var _mobileHeader = `<div class="mobileHeader">
         <li><a href="./home.html">首页</a></li>
         <li><a href="javascript:;" data-toggle="collapse" data-target="#content-2">产品中心 <i>+</i></a>
             <ul class="collapse secondLevel" id="content-2">
-                <li><a href="./product.html?proD=0" data-toggle="collapse" data-target="#content-4">有机颜料</a>
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-4">有机颜料</a>
                     <ul class="collapse secondLevel" id="content-4">
                         <li><a href="./product.html?about=0">油墨用有机颜料</a></li>
                         <li><a href="./product.html?about=1">涂料用有机颜料</a></li>
                         <li><a href="./product.html?about=2">塑胶用有机颜料</a></li>
                     </ul>
                 </li>
-                <li><a href="./product.html?proD=1"  data-toggle="collapse" data-target="#content-5">荧光颜料</a>
+                <li><a href="javascript:;"  data-toggle="collapse" data-target="#content-5">荧光颜料</a>
                     <ul class="collapse secondLevel" id="content-5">
-                        <li><a href="./product.html?proD=1#light0">LFB系列有机颜料</a></li>
-                        <li><a href="./product.html?proD=1#light11">LD系列有机颜料</a></li>
-                        <li><a href="./product.html?proD=1#light25">LFL系列有机颜料</a></li>
-                        <li><a href="./product.html?proD=1#light36">LPA系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1&type=1">LFB系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1&type=2">LD系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1&type=3">LFL系列有机颜料</a></li>
+                        <li><a href="./product.html?proD=1&type=4">LPA系列有机颜料</a></li>
                     </ul>
                 </li>
-                <li><a href="./product.html?proD=2" data-toggle="collapse" data-target="#content-5">水性色浆</a>
+                <li><a href="javascript:;" data-toggle="collapse" data-target="#content-6">水性色浆</a>
                     <ul class="collapse secondLevel" id="content-6">
-                       <li><a href="./product.html?proD=2#base0">8系列水性色浆</a></li>
-                       <li><a href="./product.html?proD=2#base30">B系列水性色浆</a></li>
+                       <li><a href="./product.html?proD=2&type=1">8系列水性色浆</a></li>
+                       <li><a href="./product.html?proD=2&type=2">B系列水性色浆</a></li>
                        <li><a href="./product.html?proD=2">F系列水性色浆</a></li>
                        <li><a href="./product.html?proD=2">Q系列水性色浆</a></li>
                     </ul>

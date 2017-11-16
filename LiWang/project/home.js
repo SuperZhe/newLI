@@ -110,13 +110,13 @@ $(function () {
                             <li class="col-xs-12">
                                 <img src="images/LiHonor/05.png" srcset="images/LiHonor/05.png 1x,images/LiHonor/05.png 2x" class="img-responsive" style="width: 80%;height: 3rem;">
                             </li>
-                        </ul>  <ul class="row item">
-                            <li class="col-xs-12">
-                                <img src="images/LiHonor/06.png" srcset="images/LiHonor/06.png 1x,images/LiHonor/06.png 2x" class="img-responsive" style="width: 80%;height: 3rem;">
+                        </ul>  
+                        <ul class="row item">
+                         <li class="col-xs-5" style="margin-left: 0.4rem">
+                                <img src="images/LiHonor/06.png" srcset="images/LiHonor/06.png 1x,images/LiHonor/06.png 2x" class="img-responsive" style="width: 100%;">
                             </li>
-                        </ul>  <ul class="row item">
-                            <li class="col-xs-12">
-                                <img src="images/LiHonor/07.png" srcset="images/LiHonor/07.png 1x,images/LiHonor/07.png 2x" class="img-responsive" style="width: 80%;height: 3rem;">
+                            <li class="col-xs-5">
+                                <img src="images/LiHonor/07.png" srcset="images/LiHonor/07.png 1x,images/LiHonor/07.png 2x" class="img-responsive" style="width:100%;">
                             </li>
                         </ul>
                     </div>

@@ -550,11 +550,155 @@ $(function () {
 
 });
 
+
+
+
+
+
+//父类抽象
 var parentMobile = function(){};
 //进行初始化，即页面渲染需要的几个数据
-parentMobile.prototype.updatePane = function(){
+parentMobile.prototype.updatePane = function(typeArr,start,pages){
+    var _me = this,_arr = [];
+    for(let i=start;i<pages;i++){
+        _arr.push(typeArr[i])
+    }
+    this.createHtml(_arr)
+};
+parentMobile.prototype.createHtml = function(v){
+    throw error("错误抛出");
+};
+parentMobile.prototype.init = function(typeArr,start,pages){
+    this.updatePane(typeArr,start,pages);
+}
+
+// var mo = new parentMobile();
+var _mobileP =function(){};
+//组合继承方法，通过调用父类构造函数，继承父类的属性保留传参优点，然后通过将父类实例作为子类原型，实现函数复用
+_mobileP.prototype = new  parentMobile();
+//调用通过原型链进行调用
+_mobileP.prototype.createHtml = function(v){
+    console.log(2)
+    //判断是否有可渗透性
+    var _ty = v[1].crocking;
+    //进行添加html
+    var _html = '';
+    _html  = `
+<table class="table tableMobile">
+  <thead>
+    <tr>`
+    _html += `<th><div class="circleMo"></div><p>丽王牌号</p></th>`;
+    v.map((v,i) => {
+        _html += `<th><div class="circle" style="background-color: ${v?v.color:''}"></div><p>${v?v.number:''}</p></th> `;
+    });
+    _html += `</tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>中文名称</td>`
+    v.map((v,i) => {
+        _html += `<td>${v?v.name:''}</td>`;
+    })
+    _html +=` </tr>
+     <tr>
+      <td>索引号</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.indexs:''}</td>`
+    })
+    _html += `</tr>
+     <tr>
+      <td>结构索引号</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.structure:''}</td>`
+    })
+    _html += `</tr>
+     <tr>
+      <td>吸油量</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.blotter:''}</td>`
+    })
+    _html += `</tr>
+     <tr>
+      <td>PH</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.PH:''}</td>`
+    })
+    _html += `</tr>
+     <tr>
+      <td>耐温</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.heatproof:''}</td>`
+    })
+    _html += `</tr>
+     <tr>
+      <td>耐光</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.light:''}</td>`
+    })
+    _html += `</tr>
+     <tr>
+      <td>耐候</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.climate:''}</td>`
+    })
+    _html += `</tr> <tr>
+      <td>耐酸</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.acidproof:''}</td>`
+    })
+    _html += `</tr> <tr>
+      <td>耐碱</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.resisting:''}</td>`
+    })
+
+    if(_ty){
+        _html += `</tr>
+     <tr>
+      <td>耐渗色</td>`
+        v.map((v,i) => {
+            _html +=` <td>${v?v.crocking:''}</td>`
+        });
+    }else{
+        _html += `</tr>
+     <tr>
+      <td>耐乙醇</td>`
+        v.map((v,i) => {
+            _html +=` <td>${v?v.alcohol:''}</td>`
+        });
+    }
+    _html += ` </tr>
+     <tr>
+      <td>耐迁移性</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.removal:''}</td>`
+    });
+    _html += `</tr>
+     <tr>
+      <td>性能特点</td>`
+    v.map((v,i) => {
+        _html +=` <td>${v?v.trait:''}</td>`
+    });
+    _html += `</tr>  
+  </tbody>
+</table>
+`;
+    $('.mobileTable').html(_html);
 
 };
+//开始进行方法的初始化
+
+
+
+
+
+
+
+
+
+
+
+
 //手机端产品信息，有机颜料
 var _mobilePro = {
     updatePanel:function (typeArr,start,pages) {
@@ -565,8 +709,10 @@ var _mobilePro = {
         _me.createHtml(_arr)
     },
     createHtml:function (v) {
-    var _ty = v[1].crocking
-        var _html
+       if(v[1]){
+           var _ty = v[1].crocking;
+       }
+        var _html;
             _html  = `
 <table class="table tableMobile">
   <thead>
@@ -581,54 +727,54 @@ var _mobilePro = {
     <tr>
       <td>中文名称</td>`
         v.map((v,i) => {
-            _html += `<td>${v?v.name:''}</td>`;
+            _html += `<td>${v?v.name:'-'}</td>`;
         })
    _html +=` </tr>
      <tr>
       <td>索引号</td>`
      v.map((v,i) => {
-    _html +=` <td>${v?v.indexs:''}</td>`
+    _html +=` <td>${v?v.indexs:'-'}</td>`
      })
     _html += `</tr>
      <tr>
       <td>结构索引号</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.structure:''}</td>`
+            _html +=` <td>${v?v.structure:'-'}</td>`
         })
     _html += `</tr>
      <tr>
       <td>吸油量</td>`
        v.map((v,i) => {
-            _html +=` <td>${v?v.blotter:''}</td>`
+            _html +=` <td>${v?v.blotter:'-'}</td>`
         })
     _html += `</tr>
      <tr>
       <td>PH</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.PH:''}</td>`
+            _html +=` <td>${v?v.PH:'-'}</td>`
         })
     _html += `</tr>
      <tr>
       <td>耐温</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.heatproof:''}</td>`
+            _html +=` <td>${v?v.heatproof:'-'}</td>`
         })
     _html += `</tr>
      <tr>
       <td>耐光</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.light:''}</td>`
+            _html +=` <td>${v?v.light:'-'}</td>`
         })
     _html += `</tr>
      <tr>
       <td>耐候</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.climate:''}</td>`
+            _html +=` <td>${v?v.climate:'-'}</td>`
         })
     _html += `</tr> <tr>
       <td>耐酸</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.acidproof:''}</td>`
+            _html +=` <td>${v?v.acidproof:'-'}</td>`
         })
         _html += `</tr> <tr>
       <td>耐碱</td>`
@@ -641,27 +787,27 @@ var _mobilePro = {
      <tr>
       <td>耐渗色</td>`
             v.map((v,i) => {
-                _html +=` <td>${v?v.crocking:''}</td>`
+                _html +=` <td>${v?v.crocking:'-'}</td>`
             });
         }else{
             _html += `</tr>
      <tr>
       <td>耐乙醇</td>`
             v.map((v,i) => {
-                _html +=` <td>${v?v.alcohol:''}</td>`
+                _html +=` <td>${v?v.alcohol:'-'}</td>`
             });
         }
         _html += ` </tr>
      <tr>
       <td>耐迁移性</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.removal:''}</td>`
+            _html +=` <td>${v?v.removal:'-'}</td>`
         });
         _html += `</tr>
      <tr>
       <td>性能特点</td>`
         v.map((v,i) => {
-            _html +=` <td>${v?v.trait:''}</td>`
+            _html +=` <td>${v?v.trait:'-'}</td>`
         });
         _html += `</tr>  
   </tbody>
@@ -680,38 +826,96 @@ var _mobileLight = {
         _me.createHtml(_arr)
     },
     createHtml:function (v) {
-
+        console.log(v);
+        var _html = '';
+        _html += `<ul class="lightMaterials ">
+        <li>丽王牌号</li>
+        <li>中文名称</li>
+        <li  class="rub"><div>摩擦</div><div><span>干磨</span><span>湿磨</span></div></li>
+        <li class="rub"><div>洗涤</div><div><span>水洗</span><span>皂洗</span></div></li>
+         <li>耐热性(℃)</li>
+         <li>耐光性</li>
+</ul><ul class="lightProduct">`
+      v.map((v,i) => {
+                _html += `<li>
+  <div>${v?v.number:'-'}</div>
+                        <div>${v?v.name:"-"}</div>
+                        <div>${v?v.Dry:"-"}</div>
+                        <div>${v?v.wet:"-"}</div>
+                        <div>${v?v.water:"-"}</div>
+                        <div>${v?v.soap:"-"}</div>
+                        <div>${v?v.heat:"-"}</div>
+                        <div>${v?v.light:"-"}</div>
+</li>`
+      });
+            _html+=`
+</ul>
+`;
+        $('.mobileTable').html(_html);
     }
 };
 //手机端页面加载之后加载
 $(function () {
-
-    _mobileLight.updatePanel()
-    _mobilePro.updatePanel(_printersInk, 0, 3);
-    pagesObj(_printersInk)
-    $(window).resize(function () {
-        var _aboutHt = $(window).width();
-        var pageCount;
-        // 有机颜料初始化进入
-        if (_aboutHt <= 1024) {
-            // 初始进入页面;
+    var _prD = GetQueryString('proD');
+    //手机端进入为有机颜料,
+    if(!_prD){
+        // _mobilePro.updatePanel(_printersInk, 0, 3);
+        // pagesObj(_printersInk,'',_mobilePro);
+        var _about = GetQueryString('about');
+        if (parseInt(_about) == 0) {
             _mobilePro.updatePanel(_printersInk, 0, 3);
-            pagesObj(_printersInk)
-            var _about = GetQueryString('about')
-            if (parseInt(_about) == 0) {
-                _mobilePro.updatePanel(_printersInk, 0, 3);
-                pagesObj(_printersInk)
-            }
-            if (parseInt(_about) == 1) {
-                _mobilePro.updatePanel(_toLiao, 0, 3);
-                pagesObj(_toLiao)
-            }
-            if (parseInt(_about) == 2) {
-                _mobilePro.updatePanel(_palstic, 0, 3);
-                pagesObj(_palstic)
-            }
+            pagesObj(_printersInk,'',_mobilePro)
         }
-    });
+        if (parseInt(_about) == 1) {
+            _mobilePro.updatePanel(_toLiao, 0, 3);
+            pagesObj(_toLiao,'',_mobilePro)
+        }
+        if (parseInt(_about) == 2) {
+            _mobilePro.updatePanel(_palstic, 0, 3);
+            pagesObj(_palstic,'',_mobilePro)
+        }
+    }
+    //进入为荧光颜料
+    if(_prD == 1){
+       console.log("荧光颜料")
+    }
+    //进入为水性颜料
+    if(_prD == 2){
+        var _type = parseInt(GetQueryString('type'));
+       switch (_type){
+           case 1:
+           _mobileLight.updatePanel(base.slice(0,32), 0, 3);
+           pagesObj(base.slice(0,32),'',_mobileLight);
+           break;
+           case 2:
+           _mobileLight.updatePanel(base.slice(32,base.length), 0, 3);
+           pagesObj(base.slice(32,base.length),'',_mobileLight);
+       }
+    }
+
+    // $(window).resize(function () {
+    //     var _aboutHt = $(window).width();
+    //     var pageCount;
+    //     // 有机颜料初始化进入
+    //     if (_aboutHt <= 1024) {
+    //         // 初始进入页面;
+    //         _mobilePro.updatePanel(_printersInk, 0, 3);
+    //         pagesObj(_printersInk);
+    //         var _about = GetQueryString('about');
+    //         if (parseInt(_about) == 0) {
+    //             _mobilePro.updatePanel(_printersInk, 0, 3);
+    //             pagesObj(_printersInk)
+    //         }
+    //         if (parseInt(_about) == 1) {
+    //             _mobilePro.updatePanel(_toLiao, 0, 3);
+    //             pagesObj(_toLiao)
+    //         }
+    //         if (parseInt(_about) == 2) {
+    //             _mobilePro.updatePanel(_palstic, 0, 3);
+    //             pagesObj(_palstic)
+    //         }
+    //     }
+    // });
 });
 
 //PC搜索
@@ -778,28 +982,29 @@ $(function () {
 
 });
 //分页初始化
-function pagesObj(typeArr,obj){
-    pageCount =Math.ceil(typeArr.length/3)
+function pagesObj(typeArr,obj,typeFun){
+    pageCount =Math.ceil(typeArr.length/3);
     icon_load(pageCount,obj?Math.ceil(obj.id/3):'');
     //点击分页按钮触发
     $(document).on("click","#pageGro li",function(){
         var pageNum = parseInt($(this).html());//获取当前页数
         var selector = $(this);
         num_click(pageCount,pageNum,selector);
-        _mobilePro.updatePanel(typeArr,pageNum*3-3,pageNum*3)
+        typeFun.updatePanel(typeArr,pageNum*3-3,pageNum*3)
     });
     //点击上一页触发
     $(document).on("click","#pageGro .pageUp",function(){
         var pageNum = parseInt($("#pageGro li.on").html());//获取当前页
         var index = $("#pageGro ul li.on").index();//获取index
-        _mobilePro.updatePanel(typeArr,(pageNum-1)*3-3,(pageNum-1)*3)
+        typeFun.updatePanel(typeArr,(pageNum-1)*3-3,(pageNum-1)*3);
         pageUp_click(pageCount,pageNum,index);
     });
+    //点击下一页触发
     $(document).on("click","#pageGro .pageDown",function(){
         var pageNum = parseInt($("#pageGro li.on").html());//获取当前页
         var index = $("#pageGro ul li.on").index();//获取index
         pageDown_click(pageCount,pageNum,index);
-        _mobilePro.updatePanel(typeArr,(pageNum+1)*3-3,(pageNum+1)*3)
+        typeFun.updatePanel(typeArr,(pageNum+1)*3-3,(pageNum+1)*3)
     });
 }
 //手机端的产品搜索

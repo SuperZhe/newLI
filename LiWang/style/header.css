@@ -387,6 +387,9 @@ nav a{
     box-sizing: border-box;
     text-align: center;
     line-height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navLeft > span > img {
