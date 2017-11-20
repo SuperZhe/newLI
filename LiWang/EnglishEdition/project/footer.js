@@ -10,9 +10,9 @@ var _footer = `
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2 col-xs-2">
                 <h3>Organic Pigments</h3>
-                    <p><span></span><a href="./product.html?about=0" style="color:#676767;">Ink organic pigments</a></p>
-      <p><span></span><a href="./product.html?about=1" style="color:#676767;">Organic pigments for plastics</a></p>
-      <p><span></span><a href="./product.html?about=2" style="color:#676767;">Organic pigments for paints</a></p>
+                    <p><span></span><a href="../product.html?about=0" style="color:#676767;">Ink organic pigments</a></p>
+      <p><span></span><a href="../product.html?about=1" style="color:#676767;">Organic pigments for plastics</a></p>
+      <p><span></span><a href="../product.html?about=2" style="color:#676767;">Organic pigments for paints</a></p>
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2 col-xs-2">
                 <h3>Fluorescent Pigments</h3>
@@ -59,9 +59,9 @@ var _selfAdaption = `
 <div class="_selfAdaption">
 <div class="accordion" data-toggle="collapse" data-target="#content"><a href="javascript:;">Organic Pigments</a><i>+</i></div>  
     <ul class="foot collapse" id="content">
-      <li><span></span><a href="./product.html?about=0">Ink organic pigments</a></li>
-      <li><span></span><a href="./product.html?about=1">Organic pigments for plastics</a></li>
-      <li><span></span><a href="./product.html?about=2">Organic pigments for paints</a></li>
+      <li><span></span><a href="../product.html?about=0">Ink organic pigments</a></li>
+      <li><span></span><a href="../product.html?about=1">Organic pigments for plastics</a></li>
+      <li><span></span><a href="../product.html?about=2">Organic pigments for paints</a></li>
     </ul>
    <div class="accordion" data-toggle="collapse" data-target="#content-7"><a href="javascript:;">Fluorescent Pigments</a><i>+</i></div>  
 

@@ -517,7 +517,22 @@ $(function () {
     var _he = $('.growUp').height();
    // setInterval(function(){$('.milestone-left').css({height:(_he+24)})},500);
     $('.search img').click(function () {
-        var _val = $('.search input').val();
-        window.location.href = './product.html?val=' + _val
+
+        var _val = $('.startSearch>input')[1].value;
+        var _length = _val.split('-').length;
+        switch (parseInt(_length)){
+            case 1:
+                console.log("水性颜料");
+                window.location.href = './product.html?MobileVal=' + _val+'&proD='+2;
+                break;
+            case 2:
+                console.log("荧光颜料");
+                window.location.href = './product.html?MobileVal=' + _val+'&proD='+1;
+                break;
+            case 3:
+                console.log("有机颜料");
+                window.location.href = './product.html?MobileVal=' + _val;
+                break;
+        }
     })
 });

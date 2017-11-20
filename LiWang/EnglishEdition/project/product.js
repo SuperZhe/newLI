@@ -3189,7 +3189,7 @@ var _PR = {
             _html += ` <li id=${v.id}>
                         <div><p class="circle" style="background-color: ${v.color};"></p></div>
                                         <div style="width: 125px;">${v.number}</div>
-                                        <div>${v.name}</div>
+                                        <!--<div>${v.name}</div>-->
                                         <div>${v.indexs}</div>
                                         <div>${v.structure}</div>
                                         <div>${v.blotter}</div>
@@ -3201,7 +3201,7 @@ var _PR = {
                                         <div>${v.resisting}</div>
                                         <div>${v.alcohol}</div>
                                         <div>${v.removal}</div>
-                                        <div>${v.trait}</div>
+                                        <div>${v.En}</div>
                       </li>`;
             if (v.id == 24) {
                 _html += `<li class="title">溶剂墨用有机颜料</li>`

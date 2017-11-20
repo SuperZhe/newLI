@@ -30,7 +30,7 @@ $(function () {
                        
                             <img src="./images/btn_ColorPaste.png" alt="图片加载失败">
                      
-                            <a href="./product.html?about=0"><img src="./images/btn_OrganicPigments.png" alt="图片加载失败"></a>
+                            <a href="../product.html?about=0"><img src="./images/btn_OrganicPigments.png" alt="图片加载失败"></a>
                         </div>`;
 
     var journalism = ` ;<div class="col-md-6 col-xs-12">
